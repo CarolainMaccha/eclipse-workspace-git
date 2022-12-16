@@ -1,6 +1,13 @@
 package sesion4;
 
+import java.util.Scanner;
+
 public  class Atleta {
+	private static Scanner sc=new Scanner(System.in);
+	public static int numatleta=0;
+	public static void contarAtleta() {
+		numatleta++;
+	}
 	private String dni;
 	private String nombre;
 	private int añonacimiento;
@@ -74,6 +81,33 @@ public  class Atleta {
 	public String toString() {
 		return "Atleta [dni=" + dni + ", nombre=" + nombre + ", añonacimiento=" + añonacimiento + ", altura=" + altura
 				+ ", peso=" + peso + ", estudia=" + estudia + ", genero=" + genero + "]";
+	}
+	public static Atleta deTeclado() {
+		
+		
+		System.out.print("Dame DNI: ");
+		String dni=sc.nextLine();
+		System.out.print("Dame nombre: ");
+		String nombre=sc.nextLine();
+		System.out.print("dime la edad:");
+		int añonacimiento=sc.nextInt();  sc.nextLine();
+		System.out.print("dime la altura: ");
+		float altura=sc.nextFloat(); sc.nextLine(); 
+		System.out.print("dime: el peso: ");
+		int peso=sc.nextInt(); sc.nextLine(); 
+		System.out.print("dime si estudia (S/N): ");
+		String siONo = sc.nextLine();
+		boolean estudia;
+		if (siONo.toUpperCase().equals("S")) estudia = true;
+		else estudia = false;
+		System.out.print("dime: tu género (M/F/X): ");
+		String generodado=sc.nextLine();
+		Genero genero;
+		if (generodado.toUpperCase().equals("M")) {genero =Genero.M;}
+		else { if (generodado.toUpperCase().equals("F")) {genero = Genero.F;} else {genero=Genero.X;}}
+		
+		contarAtleta();
+		return  new Atleta(dni,nombre,añonacimiento,altura,peso,estudia,genero);
 	}
 	
 	
