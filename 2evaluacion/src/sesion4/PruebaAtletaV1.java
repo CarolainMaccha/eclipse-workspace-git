@@ -11,10 +11,10 @@ public class PruebaAtletaV1 {
 		Atleta dos=Atleta.deTeclado();
 		System.out.println(dos.toString());
 		
-		Club daw1=new Club();
-		daw1.addAtleta(Atleta.deTeclado());
-		daw1.addAtleta(new Atleta(asdsa))
-		System.out.println(daw1);
+	//	Club daw1=new Club();
+	//	daw1.addAtleta(Atleta.deTeclado());
+	//	daw1.addAtleta(new Atleta(asdsa))
+	//	System.out.println(daw1);
 		System.out.println(Atleta.numatleta);
 		
 		
