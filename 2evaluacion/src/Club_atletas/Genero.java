@@ -1,3 +1,3 @@
-package sesion4;
+package Club_atletas;
 
 public enum Genero { M,F,X};

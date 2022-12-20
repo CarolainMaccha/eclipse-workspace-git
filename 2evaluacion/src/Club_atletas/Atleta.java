@@ -1,4 +1,4 @@
-package sesion4;
+package Club_atletas;
 
 import java.util.Scanner;
 
@@ -19,7 +19,6 @@ public  class Atleta {
 	public Atleta () {
 		
 	}
-	
 	public Atleta(String dni, String nombre, int añonacimiento, float altura, int peso, boolean estudia,
 			Genero genero) {
 		super();
@@ -83,8 +82,7 @@ public  class Atleta {
 				+ ", peso=" + peso + ", estudia=" + estudia + ", genero=" + genero + "]";
 	}
 	public static Atleta deTeclado() {
-		
-		
+	
 		System.out.print("Dame DNI: ");
 		String dni=sc.nextLine();
 		System.out.print("Dame nombre: ");
@@ -105,10 +103,7 @@ public  class Atleta {
 		Genero genero;
 		if (generodado.toUpperCase().equals("M")) {genero =Genero.M;}
 		else { if (generodado.toUpperCase().equals("F")) {genero = Genero.F;} else {genero=Genero.X;}}
-		
 		contarAtleta();
 		return  new Atleta(dni,nombre,añonacimiento,altura,peso,estudia,genero);
 	}
-	
-	
 }
