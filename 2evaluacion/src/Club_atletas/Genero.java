@@ -1,3 +1,5 @@
 package Club_atletas;
 
-public enum Genero { M,F,X};
+public enum Genero {
+	M, F, X
+};

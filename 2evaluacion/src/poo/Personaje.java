@@ -1,19 +1,19 @@
 package poo;
 
 public class Personaje {
-	private String apodo;	
+	private String apodo;
 	private String nombre;
-	
+
 	public Personaje() {
 		apodo = "sin apodo";
 		nombre = "sin nombre";
 	}
-	
+
 	public Personaje(String nombre, String apodo) {
-		this.nombre= nombre;
-		this.apodo= apodo;
+		this.nombre = nombre;
+		this.apodo = apodo;
 	}
-	
+
 	public String getApodo() {
 		return apodo;
 	}
@@ -34,5 +34,5 @@ public class Personaje {
 	public String toString() {
 		return "Personaje [apodo=" + apodo + ", nombre=" + nombre + "]";
 	}
-	
+
 }
