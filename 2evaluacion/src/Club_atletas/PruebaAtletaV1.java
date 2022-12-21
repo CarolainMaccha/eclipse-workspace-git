@@ -1,6 +1,6 @@
 package Club_atletas;
 
-import java.util.Arrays;
+
 
 public class PruebaAtletaV1 {
 	
