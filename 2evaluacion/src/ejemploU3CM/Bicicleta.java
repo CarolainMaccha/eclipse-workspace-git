@@ -45,4 +45,11 @@ public void acelerar() {
  public void cambiarPiñon(int piñon) {
  	piñonActual=piñon;
  }
+
+@Override
+public String toString() {
+	return "Bicicleta [velocidadActual=" + velocidadActual + ", platoActual=" + platoActual + ", piñonActual="
+			+ piñonActual + "]";
+}
+ 
 }
