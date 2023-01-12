@@ -25,12 +25,21 @@ public class Rectángulo extends Figura {
 	public void setAltura(int altura) {
 		this.altura = altura;
 	}
-	public double perimetro(){
-		return 0;
-	}
 	@Override
 	public String toString() {
 		return "Rectángulo [base=" + base + ", altura=" + altura + "]";
+	}
+
+	@Override
+	public double perímetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double aréa() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

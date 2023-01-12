@@ -23,4 +23,16 @@ public class Circulo  extends Figura  {
 		return "Circulo [radio=" + radio + "]";
 	}
 
+	@Override
+	public double perímetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double aréa() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
