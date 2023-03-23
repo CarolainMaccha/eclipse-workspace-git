@@ -13,6 +13,7 @@ public class PruebaAtletaV1 {
 		daw1.addAtleta(uno);
 		daw1.addAtleta(dos);
 		System.out.println(daw1);
+		
 
 	}// main
 }// class
